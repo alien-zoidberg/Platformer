@@ -3,6 +3,14 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField]
+    float jumpForce = 1200;
+
+    [SerializeField]
+    float walkSpeed = 10;
+
+    float movementX = 0;
+
     Rigidbody2D rb;
 
     void Start()
@@ -12,12 +20,16 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-
+        rb.linearVelocityX = movementX * walkSpeed;
     }
 
     void OnJump(InputValue value)
     {
-        // print("Jump");
-        rb.AddForce(Vector2.up * 500);
+        rb.AddForce(Vector2.up * jumpForce);
+    }
+
+    void OnMove(InputValue value)
+    {
+        movementX = value.Get<Vector2>().x;
     }
 }
