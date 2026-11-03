@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,6 +9,12 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     float walkSpeed = 10;
+
+    [SerializeField]
+    Transform groundCheck;
+
+    [SerializeField]
+    LayerMask groundLayer;
 
     float movementX = 0;
 
@@ -25,11 +32,18 @@ public class PlayerController : MonoBehaviour
 
     void OnJump(InputValue value)
     {
-        rb.AddForce(Vector2.up * jumpForce);
+        if(Physics2D.OverlapPoint(groundCheck.position, groundLayer))
+        {   
+            rb.AddForce(Vector2.up * jumpForce);
+        }
     }
 
     void OnMove(InputValue value)
     {
+        SpriteRenderer sr = GetComponentInChildren<SpriteRenderer>();
+
         movementX = value.Get<Vector2>().x;
+
+        sr.flipX = movementX < 0;
     }
 }
