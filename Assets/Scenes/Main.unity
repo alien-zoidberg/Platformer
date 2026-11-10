@@ -131,7 +131,7 @@ GameObject:
   m_Layer: 0
   m_Name: groundChecker
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -479,8 +479,8 @@ Transform:
   m_GameObject: {fileID: 1387824117}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1501, y: -3.5921, z: 0}
-  m_LocalScale: {x: 20.7602, y: 0.9558, z: 1}
+  m_LocalPosition: {x: 14.8384, y: -3.3571, z: 0}
+  m_LocalScale: {x: 50.135883, y: 1.4258624, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -664,8 +664,8 @@ Transform:
   m_GameObject: {fileID: 1513004424}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.4045, y: 1.3038, z: 0}
-  m_LocalScale: {x: 0.53092474, y: 5.9923024, z: 1}
+  m_LocalPosition: {x: -9.869, y: 0.9559, z: 0}
+  m_LocalScale: {x: 0.35487008, y: 7.1661944, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -803,8 +803,8 @@ Transform:
   m_GameObject: {fileID: 1517107096}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.8953, y: 1.644, z: 0}
-  m_LocalScale: {x: 0.5095, y: 5.208, z: 1}
+  m_LocalPosition: {x: 39.6207, y: 1.2525, z: 0}
+  m_LocalScale: {x: 0.56819445, y: 7.6729465, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
